@@ -1,0 +1,86 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "8f44ecf4-9e86-4e32-8025-2d94da3011ed": {
+        "id": "8f44ecf4-9e86-4e32-8025-2d94da3011ed",
+        "parent": null,
+        "name": "hiru0808_test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "824af72b-066e-4a43-8611-014bba23f284"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru0808_test"
+      },
+      "824af72b-066e-4a43-8611-014bba23f284": {
+        "id": "824af72b-066e-4a43-8611-014bba23f284",
+        "parent": "8f44ecf4-9e86-4e32-8025-2d94da3011ed",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru0808_test/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n\n    console.log(event.type);\n    console.log(event.authorizationToken);\n\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "46543038-8930-4540-8150-9b03a917392a": {
+            "id": "46543038-8930-4540-8150-9b03a917392a",
+            "name": "Test event",
+            "functionId": "824af72b-066e-4a43-8611-014bba23f284",
+            "event": "{\r\n    \"invocationId\": \"invocationIdExample\",\r\n    \"deliveryStreamArn\": \"arn:aws:kinesis:EXAMPLE\",\r\n    \"region\": \"us-east-1\",\r\n    \"records\": [\r\n        {\r\n            \"recordId\": \"49546986683135544286507457936321625675700192471156785154\",\r\n            \"approximateArrivalTimestamp\": 1495072949453,\r\n            \"data\": \"SGVsbG8sIHRoaXMgaXMgYSB0ZXN0IDEyMy4=\"\r\n        }\r\n    ]\r\n}",
+            "eventTemplate": "kinesis-kinesis-firehose"
+          }
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "8f44ecf4-9e86-4e32-8025-2d94da3011ed",
+    "openFiles": [
+      "824af72b-066e-4a43-8611-014bba23f284"
+    ],
+    "currentFileId": "824af72b-066e-4a43-8611-014bba23f284",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru0808_test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1565251818402
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru0808_test",
+      "url": "https://github.com/HirudineeADRT/hiru0808_test"
+    }
+  }
+}
